@@ -25,10 +25,10 @@ public class Main {
         ColecaoFilme colecao = new ColecaoFilme();
 
         // chamada dos métodos declarados em outras classes
-        comedia.playFilme();
-        acao.playFilme();
         colecao.addFilme (comedia);
         colecao.addFilme(acao);
         colecao.alugar();
+        comedia.playFilme();
+        acao.playFilme();
     }
 }

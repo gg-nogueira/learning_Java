@@ -8,6 +8,6 @@ class FilmeComedia extends Filme {
 
     @Override       //sobrescreve o método da classe pai
     public void playFilme() {
-        System.out.print("O filme " + nome + " está rodando");
+        System.out.println("\nO filme " + nome + " está rodando. Faltam ainda " + duration + " minutos.");
     }
 }
