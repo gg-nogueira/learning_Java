@@ -1,7 +1,7 @@
 package locadorafilmes;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
+import java.lang.*;
 
 // Classe concreta ColecaoFilme que implementa a interface Locadora
 class ColecaoFilme implements Locadora {
@@ -16,7 +16,8 @@ class ColecaoFilme implements Locadora {
     @Override       // sobrescreve o método da Interface Locadora
     public void alugar() {
         for (Filme filmes : Filme) {
-            System.out.println(filmes.nome + " foi alugado.");
+            String status = filmes.Alugado() ? "foi alugado" : " não foi alugado";
+            System.out.println(filmes.getNome() + status );
         }
     }
 }
